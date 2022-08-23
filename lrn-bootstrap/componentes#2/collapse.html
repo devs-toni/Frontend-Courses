@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <h1 class="text-center">Collapse</h1>
+    <hr />
+    <h2>Crear</h2>
+    <a class="btn btn-success" href="#contenido-1" data-bs-toggle="collapse" aria-expanded="false"
+        aria-controls="contenido1">Collapse ancla</a>
+    <button class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#contenido-1" aria-expanded="false"
+        aria-controls="contenido-1">Collapse button</button>
+
+    <div class="collapse" id="contenido-1">
+        <div class="card card-body">
+            Contenido a mostrar
+        </div>
+    </div>
+    <hr />
+
+
+    <h1 class="text-center">Acordeon</h1>
+
+    <div class="accordion" id="accordion-1">
+        <div class="card">
+            <div id="boton-collapse-1" class="card-header">
+                <button class="btn btn-block text-start" data-bs-toggle="collapse" data-bs-target="#contenido-btn-1"
+                    aria-expanded="true" aria-controls="contenido-btn-1">Título botón 1</button>
+            </div>
+            <div id="contenido-btn-1" class="collapse show" aria-labelledby="boton-collapse-1"
+                data-bs-parent="#accordion-1">
+                <div class="card-body">
+                    Contenido del botón 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nulla porro
+                    eligendi debitis in repellendus necessitatibus molestias amet libero blanditiis iste, veniam enim
+                    tempore? Soluta quibusdam nisi corporis repellat distinctio. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Reprehenderit voluptates adipisci fuga enim ea perspiciatis, repellat beatae
+                    aperiam autem laudantium, voluptatem dolore consequuntur dicta? Facere consectetur ab maiores
+                    asperiores quisquam!
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div id="boton-collapse-2" class="card-header">
+                <button class="btn btn-block text-start collapsed" data-bs-toggle="collapse" data-bs-target="#contenido-btn-2"
+                    aria-expanded="false" aria-controls="contenido-btn-2">Título botón 2</button>
+            </div>
+            <div id="contenido-btn-2" class="collapse" aria-labelledby="boton-collapse-2"
+                data-bs-parent="#accordion-1">
+                <div class="card-body">
+                    Contenido del botón 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nulla porro
+                    eligendi debitis in repellendus necessitatibus molestias amet libero blanditiis iste, veniam enim
+                    tempore? Soluta quibusdam nisi corporis repellat distinctio. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Reprehenderit voluptates adipisci fuga enim ea perspiciatis, repellat beatae
+                    aperiam autem laudantium, voluptatem dolore consequuntur dicta? Facere consectetur ab maiores
+                    asperiores quisquam!
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div id="boton-collapse-3" class="card-header">
+                <button class="btn btn-block text-start collapsed" data-bs-toggle="collapse" data-bs-target="#contenido-btn-3"
+                    aria-expanded="false" aria-controls="contenido-btn-3">Título botón 3</button>
+            </div>
+            <div id="contenido-btn-3" class="collapse" aria-labelledby="boton-collapse-3"
+                data-bs-parent="#accordion-1">
+                <div class="card-body">
+                    Contenido del botón 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nulla porro
+                    eligendi debitis in repellendus necessitatibus molestias amet libero blanditiis iste, veniam enim
+                    tempore? Soluta quibusdam nisi corporis repellat distinctio. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Reprehenderit voluptates adipisci fuga enim ea perspiciatis, repellat beatae
+                    aperiam autem laudantium, voluptatem dolore consequuntur dicta? Facere consectetur ab maiores
+                    asperiores quisquam!
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div id="boton-collapse-4" class="card-header">
+                <button class="btn btn-block text-start collapsed" data-bs-toggle="collapse" data-bs-target="#contenido-btn-4"
+                    aria-expanded="false" aria-controls="contenido-btn-4">Título botón 4</button>
+            </div>
+            <div id="contenido-btn-4" class="collapse" aria-labelledby="boton-collapse-4"
+                data-bs-parent="#accordion-1">
+                <div class="card-body">
+                    Contenido del botón 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nulla porro
+                    eligendi debitis in repellendus necessitatibus molestias amet libero blanditiis iste, veniam enim
+                    tempore? Soluta quibusdam nisi corporis repellat distinctio. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Reprehenderit voluptates adipisci fuga enim ea perspiciatis, repellat beatae
+                    aperiam autem laudantium, voluptatem dolore consequuntur dicta? Facere consectetur ab maiores
+                    asperiores quisquam!
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
