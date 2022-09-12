@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const a = [];
+        const b = [true, 'Hola', 2, 2.5,[1,2,3]];
+        console.log(a);
+        console.log(b);
+        console.log(b.length);
+        console.log(b[4][2])
+        console.log(Array.of('Hola', 'Juan'));
+        const d = Array(10).fill(false);
+        console.log(d);
+        const e = new Array(1,2,3);
+        console.log(e);
+        const f = [];
+        f.push('Azul', 'Verde');
+        console.log(f);
+        f.pop();
+        console.log(f);
+        f.push('Morado', 'Verde', 'Rojo');
+        console.log(f);
+        f.forEach(function(color, index){
+            console.log(`<li id='${index}'>${color}></li>`);
+        })
+        
+    </script>
+    </script>
+    
+</body>
+</html>
