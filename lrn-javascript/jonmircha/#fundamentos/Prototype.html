@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //Clase
+        class Animal {
+            constructor(nombre, funcion) {
+                this.nombre = nombre,
+                    this.funcion = funcion
+            }
+
+        }
+        Animal.prototype.sonar = () => {
+            console.log("Sonando con mi sonido de animla");
+        }
+        const a1 = new Animal("BUNNY", () => console.log("soy lola bunny"));
+        const a2 = new Animal('Lola', () => console.log("hOLA, SOY BUNNY"));
+        console.log(a1);
+        a1.sonar();
+        console.log(a2);
+
+        
+        //Objetos Funcionales
+        function Bestia(nombre) {
+            this.nombre = nombre;
+        }
+        Bestia.prototype.matar = () => {
+            console.log('Matando personas . . .');
+        }
+
+        const snoop = new Bestia("tonta");
+
+        snoop.matar();
+        console.log(snoop);
+
+    </script>
+</body>
+
+</html>
