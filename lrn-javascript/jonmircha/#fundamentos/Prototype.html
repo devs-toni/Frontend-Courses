@@ -1,48 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <script>
 
-        //Clase
-        class Animal {
-            constructor(nombre, funcion) {
-                this.nombre = nombre,
-                    this.funcion = funcion
-            }
+      //Clase
+      class Animal {
+          constructor(nombre, funcion) {
+              this.nombre = nombre,
+                  this.funcion = funcion
+          }
+          static queEres(){
+          console.log("soy un perro esstático");
+      }
+      get getNombre(){
+        return this.nombre;
+      }
+      set setNombre(nombre){
+        this.nombre = nombre;
+      }
+      }
 
-        }
-        Animal.prototype.sonar = () => {
-            console.log("Sonando con mi sonido de animla");
-        }
-        const a1 = new Animal("BUNNY", () => console.log("soy lola bunny"));
-        const a2 = new Animal('Lola', () => console.log("hOLA, SOY BUNNY"));
-        console.log(a1);
-        a1.sonar();
-        console.log(a2);
+      Animal.prototype.sonar = () => {
+          console.log("Sonando con mi sonido de animl");
+      }
+      const a1 = new Animal("BUNNY", () => console.log("soy lola bunny"));
+      const a2 = new Animal('Lola', () => console.log("hOLA, SOY BUNNY"));
+      console.log(a1);
+      a1.sonar();
+      console.log(a2);
+      Animal.queEres();
+      console.log(a1.getNombre);
+      a1.setNombre = 'PEDRITO';
+      console.log(a1.getNombre);
 
-        
-        //Objetos Funcionales
-        function Bestia(nombre) {
-            this.nombre = nombre;
-        }
-        Bestia.prototype.matar = () => {
-            console.log('Matando personas . . .');
-        }
+      //Objetos Funcionales
+      function Bestia(nombre) {
+          this.nombre = nombre;
+      }
+      Bestia.prototype.matar = () => {
+          console.log('Matando personas . . .');
+      }
 
-        const snoop = new Bestia("tonta");
+      const snoop = new Bestia("tonta");
 
-        snoop.matar();
-        console.log(snoop);
+      snoop.matar();
+      console.log(snoop);
 
+
+      function Perro(nombre, funcion, tamano){
+          this.super = Bestia;
+          this.super(nombre, funcion);
+          this.tamano = tamano;
+      }
+      Perro.prototype = new Bestia();
+
+      const perro = new Perro("nieve", () => console.log("Soy un perraco"), 20);
+      console.log(perro);
     </script>
-</body>
-
+  </body>
 </html>
