@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let map = new Map();
+        map.set("nombre","Toni");
+        map.set("apellido","Rufino");        
+        console.log(map);
+
+        console.log(map.size);
+        console.log(map.has("nombre"));
+        console.log(map.get("apellido"));
+        map.set("nombre", "Ying");
+        console.log(map);
+
+        for(let [key, value] of map){
+            console.log(`Llave: ${key}, Value: ${value}`);
+        }
+
+        const map2 = new Map([
+            [2, "Toni"],[3, true],[null, "nulo"]
+        ]);
+        console.log(map2);
+        const llavesMapa2 = [...map2.keys()];
+        const valoresMapa2 = [...map2.values()];
+        console.log(llavesMapa2);
+        console.log(valoresMapa2);
+
+    </script>
+</body>
+</html>
