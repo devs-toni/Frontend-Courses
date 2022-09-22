@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 
 const initialForm = {
     name:'',
@@ -6,19 +6,50 @@ const initialForm = {
     id:null
 };
 
-const CrudForm = () => {
-    
+const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
+
     const [form, setForm] = useState(initialForm);
 
-    const handleChange = (e) => { }
+    useEffect(() => {
+        if (dataToEdit) {
+            setForm(dataToEdit);
+        } else {
+            setForm(initialForm);
+        }
+    }, [dataToEdit]);
+    
 
-    const handleSubmit = (e) => { }
+    const handleChange = (e) => {
+        setForm({
+            ...form,
+            [e.target.name]:e.target.value
+        })
+    }
 
-    const handleReset = (e) => { }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        if (!form.name || !form.type){
+            alert("Datos incompletos");
+            return;
+        }
+
+        if (form.id === null) {
+            createData(form);
+        } else {
+            updateData(form);
+        }
+        handleReset();
+    }
+
+    const handleReset = (e) => { 
+        setForm(initialForm);
+        setDataToEdit(null);
+    }
 
     return (
         <div>
-            <h3>Añadir</h3>
+            <h3>{dataToEdit !== null ? 'Editar' : 'Añadir'}</h3>
             <form onSubmit={handleSubmit}>
                 <input 
                     type='text' 
