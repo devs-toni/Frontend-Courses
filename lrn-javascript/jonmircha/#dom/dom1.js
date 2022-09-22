@@ -67,13 +67,23 @@ varDarkColor = getComputedStyle($html).getPropertyValue('--dark-color');
 //$body.style.setProperty("background-color", varDarkColor);
 
 const $card = document.querySelector('.card');
-console.log($card);
-console.log($card.className);
+//console.log($card);
+//console.log($card.className);
 $card.classList.add('opacity-80', 'sepia');
 $card.classList.add('rotate-135');
-console.log($card.classList.contains('rotate-45'));
+//console.log($card.classList.contains('rotate-45'));
 $card.classList.toggle('rotate-135');
 $card.classList.toggle('rotate-135');
 $card.classList.remove('opacity-80');
 $card.classList.replace('rotate-135', 'rotate-45');
-console.log($card.classList);
+//console.log($card.classList);
+const $whatIsDOM = document.getElementById('que-es');
+let text = `
+<p>
+El modelo de Objetos del Documento 
+(<b><i>DOM - Document Object Model</i></b>) es un API para documentos HTML y XML</p>
+`;
+$whatIsDOM.innerText = text;
+$whatIsDOM.textContent = text;
+//$whatIsDOM.outerHTML = text;
+$whatIsDOM.innerHTML = text;
