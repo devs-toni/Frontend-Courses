@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Input Attributes</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1 style="text-align:center;">Input attributes</h1>
+
+    <div id="value">
+        <h2>Value</h2>
+        <p>The element <code>value="example"</code> specifies the default value of an <code>&lt;input&gt;</code>
+            element.</p>
+        <input type="text" id="valueId" name="valueName" value="Pablo">
+        <p><u>Code Example:</u></p>
+        <code>&lt;input type="text" id="valueId" name="valueName" value="Pablo"&gt;</code>
+    </div>
+    <div id="readonly">
+        <h2>Readonly</h2>
+        <p>The element <code>readonly</code>, when present, it specifies that the <code>&lt;input&gt;</code> element
+            should be disabled.</p>
+        <input type="text" id="readonlyId" name="readonlyName" value="Spain" readonly>
+        <p><u>Code Example:</u></p>
+        <code>&lt;input type="text" id="readonlyId" name="readonlyName" value="Spain" readonly&gt;</code>
+    </div>
+    <div id="disabled">
+        <h2>Disabled</h2>
+        <p>The element <code>disabled</code>, when present, it specifies that an input field is read-only.</p>
+        <input type="text" id="disabledId" name="disabledName" value="Pablo" disabled>
+        <p><u>Code Example:</u></p>
+        <code>&lt;input type="text" id="disabledId" name="disabledName" value="Pablo" disabled&gt;</code>
+    </div>
+    <div id="size">
+        <h2>Size</h2>
+        <p>The <code>size="6"</code> attribute specifies the visible width, in characters, of an
+            <code>&lt;input&gt;</code> element.
+        </p>
+        <input type="text" id="sizeId" name="sizeName" size="6">
+        <p><u>Code Example:</u></p>
+        <code>&lt;input type="text" id="sizeId" name="sizeName" size="6&gt;</code>
+    </div>
+    <div id="maxlength">
+        <h2>Maxlength</h2>
+        <p>The <code>maxlength="6"</code> attribute specifies the maximum number of characters allowed in the
+            <code>&lt;input&gt;</code> element.
+        </p>
+        <input type="text" id="maxlengthId" name="maxlengthName" maxlength="6">
+        <p><u>Code Example:</u></p>
+        <code>&lt;input type="text" id="maxlengthId" name="maxlengthName"  maxlength="6&gt;</code>
+    </div>
+    <div id="minAndMax">
+        <h2>Min and Max</h2>
+        <p>The <code>min="1"</code> and <code>max="3"</code> attributes specify the minimum and maximum values for an
+            <code>&lt;input&gt;</code> element.
+        </p>
+        <input type="number" id="minMaxId" name="minMaxName" min="1" max="10">
+        <p><u>Code Example:</u></p>
+        <code>&lt;input type="number" id="minMaxId" name="minMaxName" min="1" max="10"&gt;</code>
+    </div>
+    <div id="multiple">
+        <h2>Min and Max</h2>
+        <p>The <code>multiple</code> attribute specifies that the user is allowed to enter more than one value in the
+            <code>&lt;input&gt;</code> element. The multiple attribute works with the following input types: email
+            (separated with commas), and file (CTRL or SHIFT while selecting).
+        </p>
+        <input type="email" id="multipleId" name="multipleName" multiple>
+        <p><u>Code Example:</u></p>
+        <code>&lt;input type="email" id="multipleId" name="multipleName" multiple&gt;</code>
+    </div>
+    <div id="pattern">
+        <h2>Pattern</h2>
+        <p>The <code>pattern</code> attribute specifies a regular expression that the <code>&lt;input&gt;</code>
+            element's value is checked against on form submission.</p>
+        <input type="text" id="patternId" name="patternName" pattern="[A-Za-z]{3}"
+            title="Three letter country code">
+        <p><u>Code Example:</u></p>
+        <code>&lt;input type="text" id="patternId" name="patternName" pattern="[A-Za-z]{3}"&gt;</code>
+    </div>
+    <div id="placeholder">
+        <h2>Placeholder</h2>
+        <p>The <code>placeholder</code> attribute specifies a short hint that describes the expected value of an input
+            field (e.g. a sample value or a short description of the expected format).</p>
+        <input type="text" id="placeholderId" name="placeholderName" pattern="[A-Za-z]{3}" title="Three letter country code"
+            placeholder="Country Code">
+        <p><u>Code Example:</u></p>
+        <code>&lt;input type="text" id="placeholderId" name="placeholderName" placeholder="Country Code"&gt;</code>
+    </div>
+    <div id="required">
+        <h2>Required</h2>
+        <p>The <code>required</code> attribute when present, it specifies that an input field must be filled out before
+            submitting the form.</p>
+        <input type="text" id="requiredId" name="requiredName" required>
+        <p><u>Code Example:</u></p>
+        <code>&lt;input type="text" id="requiredId" name="requiredName" required&gt;</code>
+    </div>
+    <div id="step">
+        <h2>Step</h2>
+        <p>The <code>step</code> attribute specifies the interval between legal numbers in an <code>&lt;input&gt;</code>
+            element</p>
+        <input type="number" id="stepId" name="stepName" step="3">
+        <p><u>Code Example:</u></p>
+        <code>&lt;input type="text" id="stepId" name="stepName" step="3"&gt;</code>
+    </div>
+    <div id="autofocus">
+        <h2>Autofocus</h2>
+        <!--This attribute isn't working in replit nor in w3c tryit, but when used on chrome and safari it worked-->
+        <p>The <code>autofocus</code> attribute when present, it specifies that an <code>&lt;input&gt;</code> element
+            should automatically
+            get focus when the page loads.</p>
+        <input type="text" id="autofocusId" name="autofocusName" autofocus>
+        <p><u>Code Example:</u></p>
+        <code>&lt;input type="text" id="autofocusId" name="autofocusName" autofocus&gt;</code>
+    </div>
+
+    <div id="div-height-width">
+        <h2>Height and Width</h2>
+        <p>The <code>height</code> and <code>width</code> attributes specifies the height and the width of the
+            <code>&lt;input&gt;</code> element.
+        </p>
+        <input type="image" src="../assets/pinguino.png" id="heightWidthId" name="heightWidthName" alt="image" height="100" width="300">
+        <p><u>Code Example:</u></p>
+        <code>&lt;input type="image" id="heightWidthId" name="heightWidthName" alt="image" height="100" width="300" &gt;</code>
+    </div>
+
+    <div id="list">
+        <h2>List</h2>
+        <p>The <code>list</code> attribute refers to a <code>&lt;datalist&gt;</code> element that contains pre-defined
+
+            options for an <code>&lt;input&gt;</code> element.</p>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+
+        <p><u>Code Example:</u></p>
+        <pre>
+&lt;input list="browsers"&gt;
+&lt;datalist id="browser"&gt;
+    &lt;option value="Edge"&gt;
+    &lt;option value="Firefox"&gt;
+    &lt;option value="Chrome"&gt;
+    &lt;option value="Opera"&gt;
+    &lt;option value="Safari"&gt;
+&lt;/datalist&gt;
+            </pre>
+    </div>
+
+    <div id="form">
+        <h2>Form</h2>
+        <p>The <code>form</code> attribute specifies the form the <code>&lt;input&gt;</code> element belongs to.</p>
+        <form action="/action_page.php" id="form1">
+            <label for="formId">First name:</label>
+            <input type="text" id="formId" name="formName"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" form="form1">
+        <p><u>Code Example:</u></p>
+        <pre>
+&lt;form action="/action_page.php" id="form1"&gt;
+    &lt;label for="fname"&gt;First name:&lt;/label&gt;
+    &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+
+&lt;label for="lname"&gt;Last name:&lt;/label&gt;
+&lt;input type="text" id="lname" name="lname" form="form1"&gt;
+        </pre>
+    </div>
+    <br>
+    <button type="button" onclick="window.location.href='index.html'">Back</button>
+</body>
+
+</html>

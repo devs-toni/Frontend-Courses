@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Images</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <h1 style="text-align:center;">Images</h1>
+    <h2>The element <code>&lt;img&gt;</code> represents an image. </h2>
+    <p>
+    <div id="alt">
+        <!--atributo alt-->
+        <h2>alt attribute defines an alternative text description of the image.</h2>
+        <img src="ejemplo.png" alt="this is what appears when there is an error if the browser can't open the image">
+        <p><u>Code Example:</u></p>
+        <code>&lt;img src="ejemplo.png" alt="this is what appears when there is an error if the browser can't open the image"&gt;</code>
+    </div>
+    <div id="heightWidth">
+        <!--altura y ancho predefinidos-->
+        <h2>With a fixed height and width.</h2>
+        <img src="./assets/pinguino.png" height="150" width="265" alt="Image">
+        <p><u>Code Example:</u></p>
+        <code>&lt;img src="./assets/pinguino.png" height="150" width="265" alt="image"&gt;</code> <br>
+    </div>
+    <!--hacer que la imagen sea un link-->
+    <div id="imageLink">
+        <h2> can turn the image into a link by adding the image instead of text when adding a link.</h2>
+        <a href="index.html" target="_self">
+            <img src="/assets/pinguino.png" height="150" width="265" alt="Image as link">
+        </a>
+
+        <p><u>Code Example:</u></p>
+        <code>&lt;a href="index.html" target = "_self"&gt; &lt;img src="/assets/pinguino.png" height="150" width="265" alt = "Image as link"&gt; &lt;/a&gt;</code>
+    </div>
+
+    <br>
+    <button type="button" onclick="window.location.href='index.html'">Back</button>
+
+</body>
+
+</html>

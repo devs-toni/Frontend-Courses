@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Form Elements</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1 style="text-align:center;">Form Elements</h1>
+    <div id="input">
+        <h2>Input</h2>
+        <p>The <code>&lt;input&gt;</code> element is the most important form element.</p>
+        <p>The <code>&lt;input&gt;</code> element can be displayed in several ways, depending on the type attribute.</p>
+        <input type="text" placeholder="Introduce tu nombre">
+        <p><u>Code Example:</u></p>
+        <code>&lt;input type="type" value="value" name="name" placeholder="text"&gt;</code>
+    </div>
+    <div id="select">
+        <h2>Select</h2>
+        <p>The element <code>&lt;select&gt;</code> represents a control for selecting amongst a set of options.</p>
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+        <p><u>Code Example:</u></p>
+        <pre>
+&lt;select name="cars" id="cars"&gt;
+    &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+    &lt;option value="saab"&gt;Saab&lt;/option&gt;
+    &lt;option value="mercedes"&gt;Mercedes&lt;/option&gt;
+    &lt;option value="audi"&gt;Audi&lt;/option&gt;
+&lt;/select></pre>
+    </div>
+    <div id="textarea">
+        <h2>TextArea</h2>
+        <p>The <code>&lt;textarea&gt;</code> tag defines a multi-line text input control.</p>
+        <p>The <code>&lt;textarea&gt;</code> element is often used in a form, to collect user inputs like comments or
+            reviews.</p>
+
+        <textarea rows="10" cols="60" placeholder="Escribe"></textarea>
+        <p><u>Code Example:</u></p>
+        <code>&lt;textarea rows="4" cols="4" name="name" placeholder="text" value="value"&gt;&lt;/textarea&gt;</code>
+    </div>
+    <div id="button">
+        <h2>Button</h2>
+        <p>The <code>&lt;button&gt;</code> represents a button labeled by its contents.</p>
+        <button type="button">Click Me!</button>
+        <p><u>Code Example:</u></p>
+        <code>&lt;button type="button"&gt;Click Me!&lt;/button&gt;</code>
+    </div>
+    <div id="fieldset">
+        <h2>Fieldset</h2>
+        <p>The <code>&lt;fieldset&gt;</code> tag is used to group related elements in a form.</p>
+        <p>The <code>&lt;fieldset&gt;</code> tag draws a box around the related elements.</p>
+        <fieldset>
+            <legend>Fieldset:</legend>
+            <label for="fname">Etiqueta 1:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Etiqueta 2:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+        </fieldset>
+        <p><u>Code Example:</u></p>
+        <pre>
+&lt;fieldset&gt;
+    &lt;legend&gt;Example&lt;/legend&gt;
+    &lt;label&gt;Label&lt;/label&gt;
+    &lt;input type="type" value="value" name="name" placeholder="placeholder"&gt;
+&lt;/fieldset&gt;
+            </pre>
+    </div>
+    <div id="datalist">
+        <h2>Datalist</h2>
+        <p>The <code>&lt;datalist&gt;</code> represents a set of option elements that represent predefined options for
+            other controls. In the rendering, the datalist element represents nothing and it, along with its children,
+            should be hidden.</p>
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <p><u>Code Example:</u></p>
+        <pre>
+&lt;datalist id="browser"&gt;
+        &lt;option value="Edge"&gt;
+        &lt;option value="Firefox"&gt;
+        &lt;option value="Chrome"&gt;
+        &lt;option value="Opera"&gt;
+        &lt;option value="Safari"&gt;
+&lt;/datalist&gt;
+            </pre>
+    </div>
+    <div id="output">
+        <h2>Output</h2>
+        <p>The <code>&lt;output&gt;</code> element represents the result of a calculation performed by the application,
+            or the result of a user action.</p>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <input type="range" id="a" value="50">
+            +<input type="number" id="b" value="25">
+            =<output name="x" for="a b"></output>
+        </form>
+        <p><u>Code Example:</u></p>
+        <pre>
+&lt;form oninput="x.value=parseInt(a.value)+parseInt(b.value)"&gt;
+    &lt;input type="range" id="a" value="50"&gt;
+    +&lt;input type="number" id="b" value="25"&gt;
+    =&lt;output name="x" for="a b"&gt;&lt;/output&gt;
+&lt;/form&gt;
+            </pre>
+    </div>
+    <br>
+    <button type="button" onclick="window.location.href='index.html'">Back</button>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Forms</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1 style="text-align:center;">Form</h1>
+    <form action="/form" method="post">
+        <label for="nombre">Nombre&nbsp;</label>
+        <input type="text" id="nombre" name="nombre" placeholder="nombre" autofocus>
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="apellido">
+        <br>
+        <label for="comentario">Comentario</label><br>
+        <textarea rows="10" cols="50" id="comentario" placeholder="Ingrese comentario" name="comentario"></textarea>
+        <br>
+        <button type="submit">Enviar</button><button type="reset">Borrar</button>
+    </form>
+    <br><br>
+    <button type="button" onclick="window.location.href='index.html'">Back</button>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+body {
+  padding: 20px;
+}
+
+button {
+  text-align:center;
+  padding: 5px;
+  border: 1px solid white;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+table, th, tr, td {
+    border: 1px solid black;
+}
