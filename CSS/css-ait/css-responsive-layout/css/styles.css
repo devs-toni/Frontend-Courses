@@ -1,0 +1,231 @@
+/* RESET CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    background-color: #f2eeee;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+span {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/**************** HEADER ********************/
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#000000 0%, #102044 35%, #6199F9 100%);
+    text-align: center;
+    text-transform: uppercase;
+    height: 10vh;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2.2em;
+}
+
+
+/****************** NAV ***********************/
+
+aside.menu {
+    width: auto;
+    min-height: calc(100vh - 25vh);
+    padding: 10px;
+    background-color: grey;
+    border: 1px solid grey;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: center;
+    margin-right: 40px;
+}
+
+aside.menu a {
+    display: flex;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+/********************* MAIN ***********************/
+
+main.content {
+    overflow: auto;
+    min-height: calc(100vh - 25vh);
+    display:flex;
+    flex-direction: row;
+    text-align: justify;
+    padding-right: 50px;
+}
+
+main.content .img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40vw;
+    max-height: 400px;
+}
+
+section.section {
+    min-height: calc(100vh - 25vh);
+    flex-grow: 1;
+}
+
+section h2.center {
+    text-align: center;
+}
+
+i.icon-menu {
+    color: white;
+    margin-right: 10px;
+}
+
+/*********************** FORM **************************/
+
+form {
+    margin: 0 auto;
+}
+
+ form label, textarea {
+     display: flex;
+     margin-bottom: 10px;
+     font-size: 1.1em;
+ }
+
+ form input, textarea {
+     background-color: rgba(2,70,121,.1);
+     color: rgba(2,70,121) !important;
+     margin-bottom: 20px;
+     min-height: 25px;
+     border: none;
+     border-radius: 3px;
+     box-shadow: 1px 1px 5px rgba(2,70,121,.8);
+ }
+
+form, input, textarea, label {
+    width: 100%;
+    max-width: 400px;
+}
+
+input[type=submit] {
+    color: white !important;
+    background-color: #1b3369;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 5px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #857a7a;
+    box-shadow: 2px 2px 5px #857a7a;
+}
+
+/*********************** FOOTER ************************/
+
+footer {
+    width:100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(#6199F9 0%, #102044 50%, #000000 100%);
+}
+footer a {
+    text-decoration: none;    
+}
+
+footer img {
+    max-width: 50px;
+    padding: 0;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+footer img.icon {
+    margin: 20px;
+    height: 20px;
+    cursor:pointer;
+}
+
+@media screen and (max-width: 812px) {
+    .content {
+        background-color: #dfd072;
+    }
+
+    header {
+         font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    aside.menu {
+        min-height: auto;
+        margin: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    aside.menu a {
+        margin: 0;
+    }
+    
+    section.section {
+        padding: 20px;
+    }
+
+    main.content {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .menu a span {
+        display: none;
+    }
+
+    main.content .img {
+    min-width: 200px;
+    }
+
+    div > p {
+        font-size: 1.4rem !important;
+    }
+
+    i.icon-menu {
+        margin: 0;
+    }
+    
+}
+
+@media print {
+    
+    header,
+    aside.menu, 
+    footer,
+    form {
+        display: none !important;
+    }
+
+}

@@ -1,0 +1,167 @@
+body {
+    font-family: monospace;
+    box-sizing: border-box;
+    background-color: #f2eeee;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*************************************** HEADER ***************************/
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#000000 0%, #102044 35%, #6199F9 100%);
+    text-align: center;
+    text-transform: uppercase;
+    height: 10vh;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2.2em;
+}
+
+
+/*************************************** NAV ***************************/
+
+.menu {
+    width: auto;
+    height: 70px;
+    margin: 20px 30px 20px 30px;
+    padding: 10px;
+    background-color: grey;
+    border: 1px solid grey;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    transition: width 2s;
+}
+
+i.icon-menu {
+    color: white;
+    margin-bottom: 10px;
+}
+
+i.icon-menu:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/*************************************** MAIN ****************************/
+main.contact {
+    height: auto;
+    flex-grow: 1;
+}
+
+main .title.contact {
+    text-align: center;
+}
+
+.content {
+    height: auto;
+    display:flex;
+    flex-direction: row;
+    text-align: justify;
+    padding-right: 50px;
+}
+
+.cover-all {
+    height: 75vh;
+}
+
+.content .img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-height: 400px;
+}
+
+.main {
+    height: auto;
+}
+
+.custom_p {
+    font-style: italic;
+}
+
+/************************************** FORM ******************************/
+form {
+    margin: 0 auto;
+}
+
+ form label, textarea {
+     display: flex;
+     margin-bottom: 10px;
+     font-size: 1.1em;
+ }
+
+ form input, textarea {
+     background-color: rgba(2,70,121,.1);
+     color: rgba(2,70,121) !important;
+     margin-bottom: 20px;
+     min-height: 25px;
+     border: none;
+     border-radius: 3px;
+     box-shadow: 1px 1px 5px rgba(2,70,121,.8);
+ }
+
+form input:-internal-autofill-selected {
+    color: rgba(2,70,121) !important;
+}
+
+form, input, textarea, label {
+    width: 100%;
+    max-width: 400px;
+}
+
+input[type=submit] {
+    color: white !important;
+    background-color: #1b3369;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 5px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #857a7a;
+    box-shadow: 2px 2px 5px #857a7a;
+}
+
+/*************************************** FOOTER ***************************/
+
+footer {
+    width:100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(#6199F9 0%, #102044 50%, #000000 100%);
+    position: sticky;
+    bottom: 0px;
+}
+footer a {
+    text-decoration: none;    
+}
+
+footer img {
+    max-width: 50px;
+    padding: 0;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+footer img.icon {
+    margin: 20px;
+    height: 20px;
+    cursor:pointer;
+}
