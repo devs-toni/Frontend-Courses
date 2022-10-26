@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>El Objeto THIS</h2>
+    <script>
+      console.warn(this);
+      console.error(this === window);
+      this.nombre = "Contexto Global";
+      console.log(this);
+
+      !(function () {
+        console.log(this.nombre);
+      })();
+
+      const objeto = {
+        nombre: "Guau Guau",
+        imprimir: function () {
+          console.log(this.nombre);
+        },
+      };
+
+      const objeto2 = {
+        nombre: "Contexto de Objeto 2",
+        imprimir,
+      };
+
+      function imprimir() {
+        console.log(this.nombre);
+      }
+
+      objeto.imprimir();
+      objeto2.imprimir();
+
+      function Persona(nombre) {
+        let that = this;
+        this.nombre = nombre;
+        return  function() {
+          console.log(that.nombre);
+        };
+      }
+
+      function Persona2(nombre) {
+        this.nombre = nombre;
+        return () => {
+          console.log(this.nombre);
+        };
+      }
+
+      let jon = new Persona ('Hediondo')
+      jon();
+      let jon2 = new Persona2 ('John Nive')
+      jon2();
+    </script>
+  </body>
+</html>

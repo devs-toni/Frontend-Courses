@@ -1,0 +1,61 @@
+    #contenedorprincipal {
+        width: 800px;
+        margin: auto;
+        border: 2px solid black;
+
+    }
+
+    #header {
+        height: 250px;
+        background: url(cabecera.png) center;
+    }
+
+    #header #logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    #barralateral {
+        background-color: rgb(109, 140, 141);
+        float: left;
+        width: 120px;
+    }
+
+    #barralateral h2 {
+        font-size: 1.1em;
+    }
+
+    #barralateral h3 {
+        font-size: 0.9em;
+    }
+
+    #barralateral p {
+        font-size: 0.8em;
+    }
+
+    #principal {
+        width: 475px;
+        margin-left: 130px;
+    }
+
+    #secundario {
+        float: right;
+        width: 180px;
+        border: 1px solid black;
+        background-color: rgb(204, 178, 169);
+    }
+
+    #secundario #noticias {
+        list-style-type: none;
+        text-align: left;
+        margin-left: -5px;
+        padding-right: 20px;
+    }
+
+    #secundario #noticias li {
+        margin-bottom: 10px;
+    }
+    #footer{
+        border-top: 2px dashed black;
+
+    }

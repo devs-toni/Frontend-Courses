@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+
+    <script>
+        a = prompt ("Introduce a: ")
+        b = prompt ("Introduce b: ")
+        c = prompt ("Introduce c: ")
+
+        delta = (parseInt(a) * parseInt(b)) - (4*parseInt(a) * parseInt(c))
+
+        document.write("a: " + a + "<br>")
+        document.write("b: " + b + "<br>")
+        document.write("c: " + c + "<br>")
+
+        if (delta < 0) {
+            document.write("Sin Soluciones...")
+        } else if (delta == 0) {
+            document.write("Solución única: " + (-b/(2*a)))
+        } else {
+            document.write("Solución nº1: " + (-b+Math.sqrt(delta))/(2*a) + "<br />")
+            document.write("Solución nº2: " + (-b-Math.sqrt(delta))/(2*a) + "<br />")
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

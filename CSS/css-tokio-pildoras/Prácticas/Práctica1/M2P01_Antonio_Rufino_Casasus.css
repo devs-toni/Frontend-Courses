@@ -1,0 +1,69 @@
+img {
+    height: 60px;
+}
+
+p.tokio {
+    font-size: 16pt;
+    color: #333FFF;
+    font-weight: bold;
+}
+
+nav p {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+}
+
+nav li {
+    display: inline-block;
+    width: 30%;
+    padding: 5px 10px;
+    background-color: #000;
+    border: 1px solid #000;
+    text-align: center;
+    color: #fff;
+}
+
+nav li:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#navegador {
+    background-color: black;
+    width:100%;
+}
+
+article.articleone p {
+    float: left;
+}
+
+article.articletwo p {
+    float: right;
+}
+
+footer p {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+}
+
+footer li {
+    display: inline-block;
+    width: 30%;
+    padding: 5px 10px;
+    background-color: #000;
+    border: 1px solid #000;
+    text-align: center;
+    color: #fff;
+}
+
+footer li:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#foot{
+    background-color: black;
+    width: 100%;
+}

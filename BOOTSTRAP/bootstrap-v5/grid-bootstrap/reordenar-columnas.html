@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-Ordenamiento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <style>
+        .fila{
+            border: 3px solid blue;
+            background-color: lightblue;
+            margin-bottom: 15px;
+        }
+        .columna{
+            background-color: lightgreen;
+            border: 2px solid green;
+            text-align: center;
+        }
+        .columna:nth-child(even){
+            background-color: palegoldenrod;
+            border: 2px solid yellow;
+        }
+    </style>
+
+
+<div class="container">
+
+    <div class="row fila">
+        <div class="col-2 columna">1</div>
+        <div class="col-2 order-xxl-first columna">2</div>
+        <div class="col-2 order-first columna">3</div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

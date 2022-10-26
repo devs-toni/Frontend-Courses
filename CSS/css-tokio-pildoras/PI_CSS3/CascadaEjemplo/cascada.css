@@ -1,0 +1,76 @@
+/* TODO EL RESET CSS */
+
+body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,form,fieldset{
+    padding:0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+ol{
+    margin-left: 1.4em;
+    list-style: decimal;
+}
+ul{
+    margin-left: 1.4em;
+    list-style: square;
+}
+img{
+    border: 0;
+}
+
+/* Código */
+
+
+#principal{
+    float:left;
+    width: 70%;
+}
+#lateral{
+    margin-left: 80%;
+    padding: 15px;
+    background-color: darksalmon;
+}
+body{
+    color:brown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 130px;
+    background: rgb(225, 203, 237) url(fondo_cuerpo.png) repeat-x; 
+    width: 1100px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+h2{
+    font-size: 2.2em;
+    color: burlywood;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+h2.imagen{
+    background-image: 50px url(flor.png) repeat-x;
+}
+#principal h2{
+    color: orange;
+    border-bottom: 2px solid white ;
+    background: url(flor.png) no-repeat;
+    padding-left: 60px;
+
+}
+#principal p{
+    color:rgb(100, 39, 153);
+    padding-left: 40px;   
+    font-size: 1.1em;
+    line-height: 170%;
+    margin-bottom: 15px;
+}
+#principal .intro{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aqua;
+    font-size: 1.2em;
+    padding-left: 0px;
+    margin-bottom: 25px;
+}

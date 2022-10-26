@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Objetos.js"></script>
+    <script>
+        function init(){
+        var Adicion = {
+            x: 5,
+            y: 10,
+            calculo: function(){
+                return this.x + this.y;
+            }
+        };
+        document.write("Suma: " + Adicion.calculo());
+    }
+
+        function coche(){
+            var coche = new Coche();
+            coche.avanzar();
+            document.write(coche.tieneMotor);
+            coche.modelo = "Focus"
+            document.write(coche.modelo)
+            //document.write(coche.ruedas);
+        }
+
+        //Objeto con un método sobrecargado!
+        function vuelo(){
+            var avioneta = new avion;
+            var avionaco = new avion;
+
+            
+            avioneta.volar = function(horas, pasajeros) {
+                document.write("Llevo a " + pasajeros + " pasajeros, durante " + horas + " horas");
+            }
+
+            avioneta.volar(3, 100);
+            avionaco.volar(4);
+            console.log(avioneta)
+            console.log(avionaco)
+            document.write("<br><br>");
+            avioneta.aterrizar(4);
+            avionaco.aterrizar(20);
+        }
+    </script>
+</head>
+<body>
+    
+    <button onclick="init();">Pulsar</button>
+    <button onclick="coche();">Pulsar</button>
+    <button onclick="vuelo();">Pulsar Avion</button>
+
+
+</body>
+</html>

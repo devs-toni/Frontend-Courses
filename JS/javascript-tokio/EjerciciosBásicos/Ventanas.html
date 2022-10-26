@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function init(){
+        miVentana = window.open("www.google.es", "Ventana1", "width=600, height=400, location=yes, titlebar=yes");
+        miVentana.document.write("Viva Javascript");
+        miVentana.focus();
+        }
+        function close(){
+        miVentana.close();
+        }
+        </script>
+</head>
+<body>
+    <button onclick="init();">Abrir</button>
+    <button onclick="close();">Cerrar</button>
+
+</body>
+</html>

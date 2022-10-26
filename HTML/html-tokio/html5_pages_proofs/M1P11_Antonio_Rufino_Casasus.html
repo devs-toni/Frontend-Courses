@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 11</title>
+
+    <style type="text/css">
+        form {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20;
+            text-align: center;
+        }
+        .marco {
+            border-color: red;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+    </style>
+
+</head>
+<body>
+   <div>
+    <form action="https://httpbin.org/post" method="post" name="myform">
+        <fieldset class="marco"><legend>Registro de Usuarios</legend>
+            <label>Nombre <input type="text" name="nombre" required></label>
+            <p><label>Género   <select name="genero">
+                <option>Femenino</option>
+                <option>Masculino</option>
+            <p></select> </label></p>
+            <p><label>Fecha de Nacimiento <input type="date" name="fecha"></label></p>
+            <p><label>Email <input type="email" name="mail" required></label></p>
+            <p><label>Contraseña <input type="password" name="contra" required></label></p>
+            <p><label>Asignaturas Matriculadas <input type="number" name="asignaturas" min="1" max="15"></label></p>
+            <p><label>Curso Matriculado  <select name="curso">
+                <option>Informatica</option>
+                <option>Telecomunicaciones</option>
+                <option>Biotecnología</option>
+                <option>Aeronautica</option>
+        </select></label></p>
+        <p><label>Acepto las condiciones del contrato <input type="checkbox" name="condiciones"></label></p>
+        <p><label>Acepto registrarme <input type="checkbox" name="registro"></label></p>
+        </fieldset>
+        <p><input type="submit" value="Enviar" name="enviar"></p>
+</form>
+   </div>
+</body>
+</html>
