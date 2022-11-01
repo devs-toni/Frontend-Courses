@@ -7,15 +7,17 @@
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="../css/category.css" />
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
-  </head>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
   <body>
     <main class="grid-layout">
       <div class="header">
         <img src="../assets/logo.png" alt="Logo" class="logo" />
         <nav class="menu">
           <a href="./home.html">Home</a>
-          <a href="#">Categories</a>
-          <a href="./product.html">Products</a>
+          <a href="./category.html">Categories</a>
+          <a href="#">Products</a>
           <a href="./faq.html">F.A.Q.</a>
         </nav>
       </div>
@@ -25,95 +27,76 @@
             <a class="breadcrumb-a" ref="#">Inicio</a>
           </li>
           <li class="breadcrumb-li">
-            <a class="breadcrumb-a" ref="#">Hombre</a>
+            <a class="breadcrumb-a" ref="#">Mujer</a>
           </li>
-          <li class="breadcrumb-li">Zapatos</li>
+          <li class="breadcrumb-li">
+            <a class="breadcrumb-a" ref="#">Deportivas</a>
+        </li>
+        <li class="breadcrumb-li">Vera W4L-6780</li>
         </ul>
-        <h2 class="cover-h2">Zapatos para hombre</h2>
-        <p class="cover-p">
-          Casual, clásico o deportivo, hay unos zapatos de hombre Pikolinos para
-          cada ocasión. Siempre con la mayor comodidad y estilo
-        </p>
       </header>
-      <div class="filter">
-        <p class="filter-p bold">FILTRAR POR</p>
-        <div class="dropdown-color">
-          <span>Colores</span>
-          <div class="dropdown-color-content">
-            <p>Hola colores!</p>
-          </div>
+      <section class="products">
+        <div class="image-product">
+            <div class="mini">
+                <img src="../assets/mini-1.png" alt="Miniatura-1">
+                <img src="../assets/mini-2.png" alt="Miniatura-2">
+                <img src="../assets/mini-3.png" alt="Miniatura-3">
+                <img src="../assets/mini-4.png" alt="Miniatura-4">
+                <img src="../assets/mini-5.png" alt="Miniatura-5">
+                <img src="../assets/mini-6.png" alt="Miniatura-6">
+                <img src="../assets/mini-7.png" alt="Miniatura-7">
+                <img src="../assets/mini-8.png" alt="Miniatura-8">
+                <img src="../assets/mini-9.png" alt="Miniatura-9">
+            </div>
+            <div class="left">
+                <i class="bi bi-chevron-left" style="cursor: pointer"></i>
+            </div>
+            <div class="image">
+                <img src="../assets/main-image.png" alt="Main Image">
+            </div>
+            <div class="right">
+                <i class="bi bi-chevron-right" style="cursor: pointer"></i>
+            </div>
         </div>
-        <div class="dropdown-size">
-          <span>Tallas</span>
-          <div class="dropdown-size-content">
-            <p>Hola Talla!</p>
-          </div>
+        <div class="data-product">
+            <div class="data">
+                <h3>Vera W4L</h3>
+                <p>W4L-6780</p>
+                <h4>89,95 €</h4>
+                <p>Color : SAPPHIRE</p>
+            </div>
+            <div class="mini"></div>
+            <p class="shiping">Envíos y devoluciones gratis*</p>
+            <div class="size">
+                <p>Seleccione una talla</p>
+                <a href="#">Guía de tallas</a>
+            </div>
+            <div class="choose-size">AQUI ESCOGERA TALLAS</div>
+            <button class="buy">COMPRAR</button>
+            <p class="look">Dale a tu look un toque diferente con este calzado sport con detalles y cordones originales al estilo casual</p>
+            <div class="dropdown-1"></div>
+            <div class="dropdown-2"></div>
+            <div class="dropdown-3"></div>
+            <div class="social"></div>
         </div>
-        <p class="filter-p grow">108 productos</p>
-        <div class="dropdown-order">
-          <span class="bold">ORDENAR POR</span>
-          <div class="dropdown-order-content">
-            <p>Hola Orden!</p>
-          </div>
-        </div>
-      </div>
-      <section class="category">
-        <div class="container-1">
-          <img src="../assets/zapato-1.png" alt="Hombre" class="img" />
-          <p class="model">Berna M8J</p>
-          <p class="price">99,95 €</p>
-        </div>
-        <div class="container-2">
-          <img src="../assets/zapato-2.png" alt="Mujer" class="img" />
-          <p class="model">Berna M8J</p>
-          <p class="price">99,95 €</p>
-        </div>
-        <div class="large-container">
-          <img
-            src="../assets/zapato-3.png"
-            alt="Running"
-            class="img-grande"
-          />
-          <p class="model last">Berna M8J</p>
-          <p class="price last">99,95 €</p>
-        </div>
-        <div class="container-1 row-2">
-          <img src="../assets/zapato-4.png" alt="Hombre" class="img" />
-          <p class="model">Berna M8J</p>
-          <p class="price">99,95 €</p>
-        </div>
-        <div class="container-2 row-2 less-margin">
-          <img src="../assets/zapato-5.png" alt="Mujer" class="img" />
-          <p class="model">Berna M8J</p>
-          <p class="price">99,95 €</p>
-          <p class="options">+Colores</p>
-        </div>
-        <div class="container-3 row-2">
-          <img src="../assets/zapato-6.png" alt="Hombre" class="img" />
-          <p class="model">Berna M8J</p>
-          <p class="price">99,95 €</p>
-        </div>
-        <div class="container-4 row-2">
-          <img src="../assets/zapato-7.png" alt="Mujer" class="img" />
-          <p class="model">Berna M8J</p>
-          <p class="price">99,95 €</p>
-        </div>
-        <div class="container-1 row-3">
-          <img src="../assets/zapato-8.png" alt="Hombre" class="img" />
-          <p class="model">Berna M8J</p>
-          <p class="price">99,95 €</p>
-        </div>
-        <div class="container-2 row-3">
-          <img src="../assets/zapato-9.png" alt="Mujer" class="img" />
-          <p class="model">Berna M8J</p>
-          <p class="price">99,95 €</p>
+        <div class="other">
+            <div class="other-1">
+                <img class="other-img" src="../assets/p-1.png" alt="Other-1">
+            </div>
+            <div class="other-2">
+                <img class="other-img" src="../assets/p-2.png" alt="Other-2">
+            </div>
+            <div class="other-3">
+                <img class="other-img" src="../assets/p-3.png" alt="Other-3">
+            </div>
+            <div class="other-4">
+                <img class="other-img" src="../assets/p-4.png" alt="Other-4">
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
       </section>
-      <div class="mail">
-        <img src="../assets/mail.png" alt="Mail" class="mail-img" />
-        <p class="txt">Recibe en tu mail las últimas novedades y promociones</p>
-        <button class="btn">unirse</button>
-      </div>
     </main>
     <footer class="footer">
       <div class="footer-main">
