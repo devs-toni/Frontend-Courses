@@ -22,6 +22,11 @@ const del = (url, options = {}) => {
     customFetch(url, options);
 }
 
+const post = (url, options = {}) => {
+    options.method = "POST";
+    customFetch(url, options);
+}
+
 function charge() {
     for (let index = 1; index <= 20; index++) {
         chargePhotos(index);
@@ -79,4 +84,14 @@ const refreshTable = () => {
     fila.appendChild(titulo);
     fila.appendChild(url);
     body.appendChild(fila);
+    let data = {
+        id: 1,
+        thumbnail: null,
+        title: 'Antonio Rufino Casasus',
+        url: 'https://cursos.com/wp-content/uploads/2021/04/academia-tokio-school.jpg',
+    }
+    let optionsPut = {
+        body: data,
+    }
+    post("https://jsonplaceholder.typicode.com/photos/", optionsPut);
 };
