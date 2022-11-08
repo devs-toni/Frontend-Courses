@@ -1,0 +1,35 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Roboto', 'Lobster';
+    font-size: 1.3em;
+}
+
+.menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.622);
+}
+
+.menu .img {
+    width: 120px;
+    height: 80px;
+    margin-right: 50px; 
+}
+
+.menu .nav {
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.menu .nav .nav-link {
+    margin-right: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
