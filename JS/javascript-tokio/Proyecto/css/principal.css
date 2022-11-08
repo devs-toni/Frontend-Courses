@@ -5,9 +5,10 @@
 }
 
 /* GENERAL */
-body {
+body, html {
     font-family: 'Roboto', 'Lobster';
     font-size: 1em;
+    height: 100%;
 }
 
 /* NAVIGATION BAR */
@@ -48,6 +49,12 @@ body {
     color: white;
     font-weight: 800;
     letter-spacing: 2px;
+}
+
+/* BODY */
+.body {
+    min-height: calc(100vh - 323px);
+    margin-bottom: 50px;
 }
 
 /* FOOTER */

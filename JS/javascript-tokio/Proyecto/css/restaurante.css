@@ -2,17 +2,16 @@
     position: relative;
 }
 
-.name {
+.cov .name {
     color: white;
     position: absolute;
     top: 20%;
     width: 100%;
     text-align: center;
-    font-size: 1em;
+    font-size: 4vw;
 }
 
-.cover {
-    margin: 0 auto;
+.cov .cover {
     width: 100vw;
 }
 
@@ -20,12 +19,20 @@
     margin: 0 auto;
     width: 50%;
     margin-top: 30px;
-    text-align: center;
+    text-align: justify;
 }
 
 .whoAreWe .h1 {
+    font-style: italic;
+    margin-bottom: 20px;
 }
 
 .whoAreWe .p {
+    line-height: 30px;
+}
 
+@media screen and (max-width: 920px) {
+    .cov .name {
+        font-size: 8vw;
+    }
 }
