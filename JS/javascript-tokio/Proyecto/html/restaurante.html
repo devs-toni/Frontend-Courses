@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante</title>
-    <link rel="stylesheet" href="../css/restaurante.css"/>
-    <script src="../js/restaurante.js"></script>
-</head>
-<body>
-
-    <!-- Navigation Bar-->
-    <div class="menu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Restaurante</title>
+        <!-- Extern Libraries -->
+        <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <!-- CSS Styles -->
+        <link rel="stylesheet" href="../css/restaurante.css" />
+        <link rel="stylesheet" href="../css/principal.css" />
+    </head>
+    <body>
+        <!-- Navigation Bar-->
+        <header class="header">
+            <i id="menu" class="bi bi-list hamburguer"></i>
             <img class="img" src="../assets/logo.png" alt="Logo" />
-        <nav class="nav">
-            <a href="#" class="nav-link">Restaurante</a>
-            <a href="./carta.html" class="nav-link">Carta</a>
-            <a href="./especialidades.html" class="nav-link">Especialidades</a>
-            <a href="./grupos.html" class="nav-link">Menú Grupos</a>
-            <a href="./reserva.html" class="nav-link">Reservas</a>
-        </nav>
-    </div>
+            <nav id="nav" class="nav">
+                <a href="#" class="nav-link">Restaurante</a>
+                <a href="./carta.html" class="nav-link">Carta</a>
+                <a href="./especialidades.html" class="nav-link">Especialidades</a>
+                <a href="./grupos.html" class="nav-link">Menú Grupos</a>
+                <a href="./reserva.html" class="nav-link">Reservas</a>
+            </nav>
+        </header>
 
-    
-</body>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="social">
+                <div class="div-i">
+                    <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram i"></i></a>
+                </div>
+                <div class="div-i">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook i"></i></a>
+                </div>
+            </div>
+            <a class="footer-link" href="#">Privacidad</a>
+            <a class="footer-link" href="#">Cookies</a>
+            <a class="footer-link" href="#">Aviso Legal</a>
+            <p class="footer-text">©2022 Keply Sushi SL - Todos los derechos reservados</p>
+        </footer>
+
+        <!-- Javascript Code -->
+        <script src="../js/principal.js"></script>
+        <script src="../js/restaurante.js"></script>
+    </body>
 </html>
