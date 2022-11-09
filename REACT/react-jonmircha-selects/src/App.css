@@ -1,0 +1,11 @@
+body {
+    background-color: beige;
+    font-family: fantasy;
+}
+
+.App {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.3em;
+}
