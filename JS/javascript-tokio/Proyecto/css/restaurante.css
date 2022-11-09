@@ -13,6 +13,7 @@
 
 .cov .cover {
     width: 100vw;
+    min-height: 140px;
 }
 
 .whoAreWe {
@@ -34,5 +35,9 @@
 @media screen and (max-width: 920px) {
     .cov .name {
         font-size: 8vw;
+    }
+
+    .whoAreWe {
+        width: 80%;
     }
 }
