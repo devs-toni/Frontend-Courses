@@ -1,8 +1,12 @@
 import './App.css';
+import CrudApi from './components/crud/CrudApi';
+import ContactForm from './components/forms/ContactForm';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <CrudApi />
+      <ContactForm />
     </div>
   );
 }
