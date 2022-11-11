@@ -30,6 +30,11 @@ const MenuConceptos = () => {
         <li>
           Rutas Anidadas:  <Link exact={true} to='/react'>Documentación</Link>
         </li>
+        <li>
+          Rutas Privadas:  <Link exact={true} to='/login'>Login</Link>
+          <Link exact={true} to='/dashboard'>Dashboard</Link>
+        </li>
+
       </ol>
 
 
