@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Calculadora</title>
   </head>
   <body>
@@ -36,7 +36,7 @@
           width="24"
           height="24"
           fill="currentColor"
-          class="bi bi-clock-history"
+          class="bi bi-clock-history history-btn"
           viewBox="0 0 16 16"
         >
           <path
@@ -51,41 +51,42 @@
         </svg>
       </div>
       <div class="box-screen">
-        <p class="result">0</p>
-        <p class="op">operación</p>
+        <p id="result" class="result"></p>
+        <p class="op" id="operation"></p>
       </div>
       <div class="buttons">
         <div class="box">
-          <button class="btn yellow">C</button>
+          <button id="" class="btn yellow" onclick="clearScreen()">C</button>
           <button class="btn">±</button>
-          <button class="btn">%</button>
-          <button class="btn gray yellow">/</button>
+          <button class="btn" onclick="add('%', event)">%</button>
+          <button class="btn gray yellow" onclick="add('/', event)">/</button>
         </div>
         <div class="box">
-          <button class="btn">7</button>
-          <button class="btn">8</button>
-          <button class="btn">9</button>
-          <button class="btn gray yellow">*</button>
+          <button class="btn" onclick="add('7')">7</button>
+          <button class="btn" onclick="add('8')">8</button>
+          <button class="btn" onclick="add('9')">9</button>
+          <button class="btn gray yellow" onclick="add('*', event)">*</button>
         </div>
         <div class="box">
-          <button class="btn">4</button>
-          <button class="btn">5</button>
-          <button class="btn">6</button>
-          <button class="btn gray yellow">-</button>
+          <button class="btn" onclick="add('4')">4</button>
+          <button class="btn" onclick="add('5')">5</button>
+          <button class="btn" onclick="add('6')">6</button>
+          <button class="btn gray yellow" onclick="add('-', event)">-</button>
         </div>
         <div class="box">
-          <button class="btn">1</button>
-          <button class="btn">2</button>
-          <button class="btn">3</button>
-          <button class="btn gray yellow">+</button>
+          <button class="btn" onclick="add('1')">1</button>
+          <button class="btn" onclick="add('2')">2</button>
+          <button class="btn" onclick="add('3')">3</button>
+          <button class="btn gray yellow" onclick="add('+', event)">+</button>
         </div>
         <div class="box">
-          <button class="btn">0</button>
-          <button class="btn">.</button>
-          <button class="btn double gray yellow">=</button>
+          <button class="btn" onclick="add('0')">0</button>
+          <button class="btn" onclick="add('.')">.</button>
+          <button class="btn double gray yellow" onclick="calculate()">=</button>
         </div>
       </div>
       <div class="history">Historial</div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

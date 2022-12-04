@@ -29,6 +29,10 @@ body {
   align-items: center;
 }
 
+.main .history-btn {
+  cursor: pointer;
+}
+
 .main .box-screen {
   width: 80%;
   text-align: end;
@@ -39,14 +43,14 @@ body {
 .main .box-screen .op {
     font-size: 0.8em;
     margin: 10px 0 20px 0;
-    color: rgb(253, 148, 1);
+    color: rgb(244, 171, 65);
 }
 
 .main .box-screen .result {
   font-size: 2.8em;
   color: black;
   margin: 0;
-  color: rgb(253, 148, 1);
+  color: rgb(244, 171, 65);
 }
 
 .main .buttons {
@@ -72,6 +76,7 @@ body {
   border-radius: 40px;
   background-color: white;
   margin: 0.1em 0.7em 0.7em 0.7em;
+  cursor: pointer;
 }
 
 .main .buttons .btn:hover {
@@ -87,7 +92,7 @@ body {
 }
 
 .main .buttons .btn.yellow {
-    color: rgb(253, 148, 1);
+    color: rgb(244, 171, 65);
 }
 
 .main .buttons .btn.double {
@@ -96,7 +101,7 @@ body {
 }
 
 .main .history {
-    background-color: rgb(66, 62, 62);
+    background-color: rgb(85, 90, 96);
     display: none;
 }
 
@@ -125,7 +130,7 @@ body {
   left:0;
   right: 0;
   bottom: 0;
-  background-color: rgb(253, 148, 1);
+  background-color: rgb(244, 171, 65);
   border-radius: 20px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -138,7 +143,7 @@ body {
   width: 15px;
   left: 1.8px;
   bottom: 34.9px;
-  background-color: rgb(119, 115, 115);
+  background-color: rgb(85, 90, 96);
   border-radius: 30px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -173,4 +178,13 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+@media screen and (max-width:600px) {
+  .main {
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+  }
+  
 }

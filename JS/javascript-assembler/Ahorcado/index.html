@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./domChanges.js"></script>
+    <script src="./script.js"></script>
+    <script src="./User.js"></script>
+    <script src="./Game.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="main">
+            <div id="start" class="start active">
+                <h1 class="title">Chose a user name</h1>
+                <form onsubmit="startGame(event);">
+                    <p class="title-user">User name</p>
+                    <input class="username" type="text" name="username" id="username" required placeholder="Introduce tu nombre">
+                    <input class="btn" type="submit" value="Start">
+                </form>
+            </div>
+
+            <div id="game" class="game">
+                <p class="title">Guess the word</p>
+                
+                <div class="main-game">
+                    <div class="person">_________</div>
+                    <div id='word' class="word">
+                    </div>
+                </div>
+                <div class="letters">
+                    <button type="option">A</button>
+                    <button type="option">B</button>
+                    <button type="option">C</button>
+                    <button type="option">D</button>
+                    <button type="option">E</button>
+                    <button type="option">F</button>
+                    <button type="option">G</button>
+                    <button type="option">H</button>
+                    <button type="option">I</button>
+                    <button type="option">J</button>
+                    <button type="option">K</button>
+                    <button type="option">L</button>
+                    <button type="option">M</button>
+                    <button type="option">N</button>
+                    <button type="option">O</button>
+                    <button type="option">P</button>
+                    <button type="option">Q</button>
+                    <button type="option">R</button>
+                    <button type="option">S</button>
+                    <button type="option">T</button>
+                    <button type="option">U</button>
+                    <button type="option">V</button>
+                    <button type="option">W</button>
+                    <button type="option">X</button>
+                    <button type="option">Y</button>
+                    <button type="option">Z</button>
+                </div>
+            </div>
+
+            <div id="status" class="status">
+                <h1 class="title">You won!🥳</h1>
+                <p class="time">You won in 15 seconds.</p>
+                <form>
+                    <button class="btn" type="submit">Play again</button>
+                </form>
+            </div>
+        </div>
+        <div id="scores" class="scores">
+            <p class="title">User Scores</p>
+        </div>
+    </div>
+</body>
+
+</html>

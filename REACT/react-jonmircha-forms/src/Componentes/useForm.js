@@ -31,7 +31,7 @@ export const useForm = (initialForm, validateForm, validateName) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setErrors(validateForm(form));
+         setErrors(validateForm(form)); 
         
         if (Object.keys(errors).length === 0) {
             setLoading(true);
