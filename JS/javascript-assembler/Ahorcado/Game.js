@@ -21,11 +21,15 @@ class Game {
         e.target.style.cursor = 'auto';
         for (const char of this.word) {
             if (char === letter.toLowerCase()) {
-                this.hits++;
                 const letterContainer = document.querySelectorAll(`#${char}`);
-                letterContainer.forEach(div => div.textContent = letter);
+                letterContainer.forEach(div => {
+                    div.textContent = letter;
+                    this.hits++;
+                });
                 e.target.style.backgroundColor = 'green';
+                console.log(this.hits + " + " + this.word.length);
                 if (this.hits === this.word.length) {
+                    clearInterval(timer);
                     this.winner = true;
                     finishGame();
                 }
@@ -34,6 +38,7 @@ class Game {
         }
         this.fails++;
         if (this.fails === this.opportunities) {
+            clearInterval(timer);
             finishGame();
         }
 

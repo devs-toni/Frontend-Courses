@@ -1,9 +1,14 @@
 let user, game, hits;
-let users = [];
-let wordList = ['mundo','espectaculo','persiana','calavera'];
-
+let wordList = ['mundo', 'espectaculo', 'persiana', 'calavera'];
+let timePassed = 0;
+let users;
+let timer;
 
 function startGame(e) {
+    timer = setInterval(() => {
+        timePassed++;
+        console.log('timePassed: ' + timePassed);
+    }, 1000);
     users = JSON.parse(localStorage.getItem('users'));
     if (!users) users = [];
     hits = 0;
@@ -12,6 +17,22 @@ function startGame(e) {
     game = new Game(user);
     game.chooseWord(wordList.length);
     showGame(user);
-    users.push(user);
-    localStorage.setItem('users', JSON.stringify(users));
+}
+
+function finishGame(e) {
+    
+    if (game.winner) {
+        user.score = timePassed;
+        user.score = `Win! ${timePassed} seconds`;
+        users.push(user);
+        localStorage.setItem('users', JSON.stringify(users));
+        finish(0);
+    }
+    else {
+        user.score = timePassed;
+        user.score = `Lost! ${timePassed} seconds`;
+        users.push(user);
+        localStorage.setItem('users', JSON.stringify(users));
+        finish(1);
+    }
 }

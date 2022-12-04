@@ -1,12 +1,10 @@
 const start = document.getElementById('start');
 const gameScreen = document.getElementById('game');
 const statusScreen = document.getElementById('status');
-
 const word = document.getElementById('word');
-
 const options = document.querySelectorAll("[type='option']");
-
 const scoresPanel = document.getElementById('scores');
+const finalPanel = document.getElementById('status');
 
 const showGame = (user) => {
     start.classList.remove('active');
@@ -35,6 +33,7 @@ const showGame = (user) => {
     scoreUser.classList.add('match');
     name.classList.add('name');
     score.classList.add('score');
+    score.setAttribute('id', 'score');
     name.textContent = user.name;
     score.textContent = 'Currently playing...';
     scoreUser.append(name);
@@ -44,7 +43,22 @@ const showGame = (user) => {
     gameScreen.classList.add('active');
 }
 
-const finishGame = () => {
+const finish = (state) => {
+    let title = document.createElement('h1');
+    let time = document.createElement('p');
+    title.classList.add('title');
+    time.classList.add('time');
+    if (state === 0) {
+        title.textContent = 'You won 🥳';
+        time.textContent = `You won in ${user.score} seconds`;
+        document.getElementById('score').textContent = `Win! ${timePassed} seconds`;
+    } else {
+        title.textContent = 'You lose 😒';
+        time.textContent = `You lost in ${user.score} seconds`;
+        document.getElementById('score').textContent = `Lose! ${timePassed} seconds`;
+    }
+    finalPanel.insertBefore(time, finalPanel.firstChild);
+    finalPanel.insertBefore(title, finalPanel.firstChild);
     gameScreen.classList.remove('active');
     statusScreen.classList.add('active');
 }
