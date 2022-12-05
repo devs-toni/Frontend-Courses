@@ -29,11 +29,11 @@ export function TareaFormulario(props){
             <input 
                 className='tarea-input'
                 type='text'
-                placeholder='Introduce una tarea'
+                placeholder='Enter a task'
                 name='texto'
                 onChange={manejarCambio}
             />
-            <button type='submit' className='tarea-boton'>Agregar Tarea</button>
+            <button type='submit' className='tarea-boton'>Add Task</button>
         </form>
     );
 }
