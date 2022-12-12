@@ -28,3 +28,16 @@
     color:#000000;
     text-transform: capitalize;
 }
+
+@media screen and (max-width: 510px) {
+    .tarea-formulario {
+        flex-wrap: wrap;
+        flex-flow: column wrap;
+    }
+    .tarea-input {
+        margin-bottom: 20px;
+    }
+    .tarea-input {
+        width: 95%;
+    }
+  }

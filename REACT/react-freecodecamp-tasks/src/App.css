@@ -54,3 +54,30 @@ h1 {
   justify-content: center;
   box-shadow: 0 0 15px 8px rgba(0, 0, 0, 0.788);
 }
+
+@media screen and (max-width: 768px) {
+  .tareas-lista-principal {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+  }
+  .aplicacion-tareas {
+    min-height: 100vh;
+    margin-top: 0;
+  }
+  body, html {
+    overflow: hidden;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 420px) {
+  .tareas-lista-principal {
+    width: 100vw;
+    min-height: 100vh;
+    margin-bottom: 0;
+  }
+  .aplicacion-tareas {
+width: 100%;
+min-height: 100vh;
+  }
+}
